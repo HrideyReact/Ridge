@@ -1,6 +1,29 @@
+.tabBox {
+
+    border-style: none !important;
+    border-bottom: 1px solid white;
+    width: 374px;
+    height: 80px;
+    margin-left: 20px;
+    gap: 5px;
+}
+
 .buttonTab {
-    span {
+    background-color: rgba(73, 111, 254, 0.08);
+
+    div {
+        justify-content: space-between;
+    }
+
+    button {
+        border-radius: 10px;
+        height: 40px;
         background-color: white;
+
+    }
+
+    span {
+        width: 0px !important;
     }
 
 }

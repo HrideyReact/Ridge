@@ -3,7 +3,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-
+import "./tabPanel.scss";
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -46,17 +46,9 @@ export default function DashboardTabs() {
 
   return (
     <Box sx={{ width: "100%" }}>
-      <Box
-        className="buttonTab"
-        sx={{
-          borderStyle: "none !important",
-          borderBottom: "1px solid white",
-          width: "374px",
-          height: "48px",
-          marginLeft: "20px",
-        }}
-      >
+      <Box className="tabBox">
         <Tabs
+          className="buttonTab"
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
