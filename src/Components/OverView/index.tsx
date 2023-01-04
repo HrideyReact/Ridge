@@ -11,7 +11,7 @@ const OverView = () => {
   const [selectedCategory, setSelectedCategory] = useState("Yesterday");
 
   return (
-    <Box  >
+    <Box>
       {/* Dropdown to select time of data */}
       <FormControl>
         <Select
@@ -37,7 +37,7 @@ const OverView = () => {
           Revenue Over Time
         </Typography>
         <GraphChart />
-        <Typography color="primary" variant="h2" mt="10px" mb="8px" >
+        <Typography color="primary" variant="h2" mt="10px" mb="8px">
           Top selling Products
         </Typography>
         <TopSellingTable />

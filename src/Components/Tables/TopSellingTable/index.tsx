@@ -62,7 +62,7 @@ export default function TopSellingTable() {
     >
       <TableContainer component={Paper}>
         <Table
-          sx={{ minWidth: 500, boxShadow:'none' }}
+          sx={{ minWidth: 500, boxShadow: "none" }}
           aria-label="customized table"
         >
           <TableHead>

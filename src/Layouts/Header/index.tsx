@@ -1,9 +1,8 @@
-import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
+import { IconButton, Toolbar } from "@mui/material";
 import { Box } from "@mui/system";
-import { styled, alpha } from "@mui/material/styles";
+import { styled } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
-import Image from "mui-image";
 import { Images } from "../../Assets";
 
 const Header = () => {
