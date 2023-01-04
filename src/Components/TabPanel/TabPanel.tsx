@@ -4,6 +4,9 @@ import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import "./tabPanel.scss";
+import { OverView } from "../OverView";
+import { styled } from "@mui/material/styles";
+
 interface TabPanelProps {
   children?: React.ReactNode;
   index: number;
@@ -22,14 +25,22 @@ function TabPanel(props: TabPanelProps) {
       {...other}
     >
       {value === index && (
-        <Box sx={{ p: 3 }}>
+        <Box sx={{ paddingX: 3,paddingTop:2 }}>
           <Typography>{children}</Typography>
         </Box>
       )}
     </div>
   );
 }
-
+const TabSpan = styled("span")(({ theme }) => ({
+  height: "32px",
+  fontSize: "12px",
+  padding: "8px 8px 8px 8px",
+  color: "#977D23",
+  backgroundColor: "#FFD84F",
+  borderRadius: "0px 6px 6px 0px",
+  marginTop: "12px",
+}));
 function a11yProps(index: number) {
   return {
     id: `simple-tab-${index}`,
@@ -48,19 +59,21 @@ export default function DashboardTabs() {
     <Box sx={{ width: "100%" }}>
       <Box className="tabBox">
         <Tabs
+          sx={{ gap: "5px" }}
           className="buttonTab"
           value={value}
           onChange={handleChange}
           aria-label="basic tabs example"
         >
-          <Tab label="OverView" {...a11yProps(0)} />
-          <Tab label="Products" {...a11yProps(1)} />
-          <Tab label="SEO Analysis" {...a11yProps(2)} />
+          <Tab sx={{backgroundColor:value===0 ? 'white' : 'inherit'}} label="OverView" {...a11yProps(0)} />
+          <Tab sx={{backgroundColor:value===1 ? 'white' : 'inherit'}} label="Products" {...a11yProps(1)} />
+          <Tab sx={{backgroundColor:value===2 ? 'white' : 'inherit'}} label="SEO Analysis" {...a11yProps(2)} />
         </Tabs>
+        <TabSpan>Coming Soon</TabSpan>
       </Box>
       {/* <span>Coming soon</span> */}
       <TabPanel value={value} index={0}>
-        Overview
+        <OverView />
       </TabPanel>
       <TabPanel value={value} index={1}>
         Item Two

@@ -5,7 +5,7 @@ const Dashboard = () => {
   return (
     <>
       <DashboardTabs />
-      <Typography>Dashboardddd</Typography>
+      {/* <Typography>Dashboardddd</Typography> */}
     </>
   );
 };

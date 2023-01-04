@@ -25,9 +25,9 @@ const Header=({open,toggleDrawer}:DrawerHeaderProps)=>{
           <IconButton onClick={toggleDrawer}>
             {
                 open ?
-                <Image src={Images.LogoExpand} height='40px' width={'150px'} />
+                <img src={Images.LogoExpand} height='40px' width={'150px'} />
                 :
-                <Image src={Images.LogoCollapse} height='40px' width={'40px'} />
+                <img src={Images.LogoCollapse} height='40px' width={'40px'} />
 
             }
           </IconButton>

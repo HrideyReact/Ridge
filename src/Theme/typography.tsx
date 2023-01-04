@@ -6,8 +6,9 @@ const ridgeTypography= {
     fontSize:15,
 
     h2:{
-        fontSize:40,
-        fontFamily:'InterRegular'
+        fontSize:20,
+        fontFamily:'PoppinsRegular',
+        fontWeight:700,
     }
 
 }

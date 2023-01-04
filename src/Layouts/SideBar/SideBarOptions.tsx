@@ -47,7 +47,7 @@ const SideBarOptions=({open}:OptionProps)=>{
                     justifyContent: 'center',
                   }}
                 >
-                    <Image height={'24px'} width={'24px'} src={item.icon} />
+                    <img height={'24px'} width={'24px'} src={item.icon} />
                 </ListItemIcon>
                 <ListItemText primary={item.label} sx={{ opacity: open ? 1 : 0,color:'white' }} />
               </ListItemButton>
