@@ -3,6 +3,7 @@ import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
+import { OverView } from "../OverView";
 
 interface TabPanelProps {
   children?: React.ReactNode;
@@ -68,7 +69,7 @@ export default function DashboardTabs() {
       </Box>
       {/* <span>Coming soon</span> */}
       <TabPanel value={value} index={0}>
-        Overview
+        <OverView/>
       </TabPanel>
       <TabPanel value={value} index={1}>
         Item Two

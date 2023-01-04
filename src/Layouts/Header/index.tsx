@@ -2,16 +2,7 @@ import { AppBar, IconButton, Toolbar, Typography } from "@mui/material";
 import { Box } from "@mui/system";
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
-import Badge from "@mui/material/Badge";
-import MenuItem from "@mui/material/MenuItem";
-import Menu from "@mui/material/Menu";
-import MenuIcon from "@mui/icons-material/Menu";
 import SearchIcon from "@mui/icons-material/Search";
-import AccountCircle from "@mui/icons-material/AccountCircle";
-import MailIcon from "@mui/icons-material/Mail";
-import NotificationsIcon from "@mui/icons-material/Notifications";
-import MoreIcon from "@mui/icons-material/MoreVert";
-import { SvgIcon } from "@mui/material";
 import Image from "mui-image";
 import { Images } from "../../Assets";
 
@@ -37,7 +28,7 @@ const Header = () => {
   }));
 
   const SearchIconWrapper = styled("div")(({ theme }) => ({
-    // padding: theme.spacing(0, 2),
+
     height: "100%",
     position: "absolute",
     pointerEvents: "none",
@@ -78,7 +69,7 @@ const Header = () => {
       <Toolbar sx={{ width: "100%", display: "flex", padding: "1% 0 2% 0" }}>
         <Search>
           <SearchIconWrapper>
-            <SearchIcon sx={{ width: "1.5rem", height: "1.5rem" }} />
+            <SearchIcon sx={{ width: "1.5rem", height: "1.5rem",color:'grey' }} />
           </SearchIconWrapper>
           <StyledInputBase
             placeholder="Search…"
