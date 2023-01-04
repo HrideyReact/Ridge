@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'InterLight';
+    src: url('Inter-Light.ttf') format('OpenType');
+}
+
+@font-face {
+    font-family: 'InterBlack';
+    src: url('Inter-Black.ttf') format('OpenType');
+}
+@font-face {
+    font-family: 'InterBold';
+    src: url('Inter-Bold.ttf') format('OpenType');
+}
+
+@font-face {
+    font-family: 'InterXBold';
+    src: url('Inter-ExtraBold.ttf') format('OpenType');
+}
+
+@font-face {
+    font-family: 'InterXLight';
+    src: url('Inter-ExtraLight.ttf') format('OpenType');
+}
+
+@font-face {
+    font-family: 'InterMedium';
+    src: url('Inter-Medium.ttf') format('OpenType');
+}
+
+@font-face {
+    font-family: 'InterMedium';
+    src: url('Inter-Medium.ttf') format('OpenType');
+}
+
+@font-face {
+    font-family: 'InterRegular';
+    src: url('Inter-Regular.ttf') format('OpenType');
+}

@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { createTheme, ThemeProvider } from '@mui/material';
+import { Route, Routes } from 'react-router-dom';
+import Header from './Layouts/Header';
+import SideBar from './Layouts/SideBar';
+import { Dashboard } from './Pages';
+import ridgeTheme from './Theme';
+
+//Setting default themes to across the website
+const theme= createTheme(ridgeTheme);
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ThemeProvider theme={theme} >
+      <SideBar>
+        <Header/>
+      <Routes>
+        <Route path='/' element={<Dashboard/>} />
+      </Routes>
+    </SideBar>
+    </ThemeProvider>
   );
 }
 
