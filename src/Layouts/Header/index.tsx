@@ -27,7 +27,6 @@ const Header = () => {
   }));
 
   const SearchIconWrapper = styled("div")(({ theme }) => ({
-
     height: "100%",
     position: "absolute",
     pointerEvents: "none",
@@ -59,7 +58,6 @@ const Header = () => {
       position: `absolute`,
       right: 30,
       display: "flex",
-      gap: "10px",
     },
   }));
 
@@ -68,7 +66,9 @@ const Header = () => {
       <Toolbar sx={{ width: "100%", display: "flex", padding: "1% 0 2% 0" }}>
         <Search>
           <SearchIconWrapper>
-            <SearchIcon sx={{ width: "1.5rem", height: "1.5rem",color:'grey' }} />
+            <SearchIcon
+              sx={{ width: "1.5rem", height: "1.5rem", color: "grey" }}
+            />
           </SearchIconWrapper>
           <StyledInputBase
             placeholder="Search…"
@@ -77,10 +77,14 @@ const Header = () => {
         </Search>
         <StyledIconContainer>
           <IconButton>
-          <img alt='notification-icon' height={"42px"} src={Images.NotificationIcon} />
+            <img
+              alt="notification-icon"
+              height={"42px"}
+              src={Images.NotificationIcon}
+            />
           </IconButton>
           <IconButton>
-          <img alt='info-icon' height={"42px"} src={Images.UserInfo} />
+            <img alt="info-icon" height={"42px"} src={Images.UserInfo} />
           </IconButton>
         </StyledIconContainer>
       </Toolbar>

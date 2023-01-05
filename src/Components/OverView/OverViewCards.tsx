@@ -14,8 +14,8 @@ export default function OverViewCard() {
     width: "100%",
     paddingTop: "15px",
     display: "grid",
-    gridTemplateColumns: " repeat(6, 15%)",
-    gap: "20px",
+    gridTemplateColumns: " repeat(6, 15.5%)",
+    gap: "15px",
   }));
   return (
     <CardContainer>
@@ -28,7 +28,7 @@ export default function OverViewCard() {
               backgroundColor: "rgba(73, 111, 254, 0.08)",
             }}
           >
-            <CardContent>
+            <CardContent >
               <Image height="2" width="24px" src={val.icon} />
 
               <Typography
@@ -37,7 +37,7 @@ export default function OverViewCard() {
                   width: "max-content",
                   position: "absolute",
                   marginLeft: "2.5%",
-                  fontSize: "14px",
+                  fontSize: "12px",
                   marginTop: "-1.5%",
                   fontWeight: "500",
                   color: "#242424",
@@ -47,7 +47,11 @@ export default function OverViewCard() {
               </Typography>
               <Typography
                 variant="h6"
-                style={{ padding: "1%", marginTop: "5%", fontWeight: "1000" }}
+                style={{
+                  // padding: "2px 0px 2px 10px ",
+                  marginTop: "5%",
+                  fontWeight: "1000",
+                }}
               >
                 {val.value}
               </Typography>

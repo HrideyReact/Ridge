@@ -1,6 +1,12 @@
 .tooltip-view{
     background-color: 'red';
 }
-.g2-tooltip {
-    background-color: aqua;
+
+.MuiBox-root{
+    .g2-tooltip {
+        background-color: #292F51 !important;
+        padding:5px !important;
+        border-radius: 8px !important;
+        
+    }
 }

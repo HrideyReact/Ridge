@@ -1,8 +1,5 @@
 import * as React from "react";
-import Tabs from "@mui/material/Tabs";
-import Tab from "@mui/material/Tab";
-import Typography from "@mui/material/Typography";
-import Box from "@mui/material/Box";
+import {Tab,Tabs,Typography,Box} from "@mui/material";
 import "./tabPanel.scss";
 import { OverView } from "../OverView";
 import { styled } from "@mui/material/styles";

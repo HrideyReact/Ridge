@@ -37,7 +37,7 @@ const GraphChart=()=>{
           },
           {
             "timePeriod": "6:00 PM",
-            "value": 15000
+            "value": 12000
           },
           {
             "timePeriod": "7:00 PM",
@@ -47,13 +47,16 @@ const GraphChart=()=>{
 
     //Configs for graphs
     const config = {
+      style:{
+        color:'red'
+      },
         line:{
             size:3
         },
         areaStyle: {
             fill: 'l(270) 0:#ffffff 0.5:#292F51 1:#292F51',
           },
-        height:200,
+        height:272,
         smooth:true,
         color:'#292F51',
         data,
@@ -61,6 +64,11 @@ const GraphChart=()=>{
         yField: 'value',
         xAxis: {
           range: [0, 1],
+        },
+        tooltip: {
+          customContent: (title:string, data:any[]) => {
+            return <div style={{color:'white'}} >Fri: {data[0]?.value}</div>;
+          }
         },
       };
 
